@@ -27,7 +27,7 @@ car_service_time
 # Formula for calculating z-score = (x-??)/??
 
 z_value <- (50-45)/8  
-# Then P (X???50) = P(Z???0.625) = 0.265986 from the Z-table.
+# Then P (X≥50) = P(Z≥0.625)  = 0.265986 from the Z-table.
 pnorm(-abs(z_value))
 
 
