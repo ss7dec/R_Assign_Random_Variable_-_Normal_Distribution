@@ -74,18 +74,29 @@ round(pnorm(q=36, mean=38, sd= 6, lower.tail = TRUE),3)
 # 3.  If X 1  ~ N(??, ?? 2 ) and X 2  ~ N(??, ?? 2 ) are iid normal random variables, then what is the 
 # difference between 2 X 1  and X 1  + X 2 ? Discuss both their distributions and parameters.        
 
-#If Z = aX + bY , where X and Y are as defined above, i.e Z is linear combination of
-#X and Y , then Z ??? N(a�1 + b�2, a2??
-                       2
-                       1 + b
-                       2??
-                       2
-                       2)
+# Ans:
+#Linear combinations
+#• If X ∼ N(µ1, σ2 1), and Y ∼ N(µ2, σ2 2) are two independent R.Vs then X + Y ∼N(µ1 + µ2, σ2
+#   1 + σ
+#   2
+#   2) , 
+#and X − Y ∼ N(µ1 − µ2, σ2
+#                   1 + σ
+#                   2
+#                   2)
 
-#Ans:
+#If Z = aX + bY , where X and Y are as defined above, i.e Z is linear combination of
+#X and Y , then Z ??? N(aµ1 + bµ2, a2??
+#                       2
+#                       1 + b
+#                       2??
+#                       2
+#                       2)
+
+
 # The above property extends to n independent normal random variables, i.e if X1, X2, ...Xn
 #are i.i.d normal random variables then S = X1 + X2 + ... + Xn is also Normal random
-#variable with � = E(X) = P�i and ??
+#variable with µ = E(X) = Pµi and ??
 # 2 = V ar(X) = P??
 # 2
                        
