@@ -12,20 +12,16 @@
 # D.  0.6987  
 
 ##### Ans:::::
-
-X=Random_variable 
-x=probability
-??=Mean
-?? = Standard_Deviation
-p=probability
+# Normal time for servicing  cars is between 8 minutes and 45 minutes
 
 # Let X denote the random time required for servicing a car.
-# To find out the probability value, it is denoted as  p(X+10???60) = p(X???50).
+# To find out the probability value, it is denoted as  P(X+10≥60) = P(X≥50).
 
 
 # By using p-norm() then------ 
 
-round(pnorm(q=50, mean=45, sd= 8, lower.tail = FALSE),3)
+car_service_time<-pnorm(q=50, mean=45, sd= 8, lower.tail = FALSE)
+car_service_time
 
 #n Alternative Method by using Z-value 
 # Formula for calculating z-score = (x-??)/??
@@ -53,8 +49,8 @@ pnorm(-abs(z_value))
 #######Ans::::
 # Given data---
 n= 400
-?? = 38
-?? = 6
+mean = 38
+sd = 6
 
 # 2A------
 round(pnorm(q=44, mean=38, sd= 6, lower.tail = FALSE),3)
