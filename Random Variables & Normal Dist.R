@@ -15,7 +15,9 @@
 # Normal time for servicing  cars is between 8 minutes and 45 minutes
 
 # Let X denote the random time required for servicing a car.
-# To find out the probability value, it is denoted as  P(X+10≥60) = P(X≥50).
+# To find out the probability value, it is denoted as:
+
+P(X+10≥60) = P(X≥50)
 
 
 # By using p-norm() then------ 
@@ -24,7 +26,7 @@ car_service_time<-pnorm(q=50, mean=45, sd= 8, lower.tail = FALSE)
 car_service_time
 
 #n Alternative Method by using Z-value 
-# Formula for calculating z-score = (x-??)/??
+# Formula for calculating z-score = (x-μ)/σ
 
 z_value <- (50-45)/8  
 # Then P (X≥50) = P(Z≥0.625)  = 0.265986 from the Z-table.
@@ -67,7 +69,7 @@ round(pnorm(q=36, mean=38, sd= 6, lower.tail = TRUE),3)
 
 ##############################################################################
 
-# 3.  If X 1  ~ N(??, ?? 2 ) and X 2  ~ N(??, ?? 2 ) are iid normal random variables, then what is the 
+# 3.  If X 1  ~ N(μ, σ 2 ) and X 2  ~ N(μ, σ 2 )are iid normal random variables, then what is the 
 # difference between 2 X 1  and X 1  + X 2 ? Discuss both their distributions and parameters.        
 
 # Ans:
@@ -125,7 +127,7 @@ qnorm(.005)
 
 # For Probability 0.005 the Z Value is -2.57 (taken from Z Table).
 
-# Z * ?? + ?? = X
+# Z * σ + μ = X
 m = (-2.57)*20+100     # Z(0.005)*20+100 = (-2.57)*20+100 = 48.6
 n= -(-2.57)*20+100    # Z(-0.005)*20+100 = -(-2.57)*20+100 = 151.4
 df_m_n <- data.frame(m,n)
